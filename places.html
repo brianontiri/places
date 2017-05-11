@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/script.js"></script>
+      <title>Address book</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1>places visited</h1>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Add Details:</h2>
+            <form id="new-places">
+              <div class="form-group">
+                <label for="new-city">city visited</label>
+                <input type="text" class="form-control" id="new-city">
+              </div>
+              <div class="form-group">
+                <label for="new-country">countries visited</label>
+                <input type="text" class="form-control" id="new-country">
+              </div>
+              <div class="form-group">
+                <label for="year">year visited</label>
+                <input type="text" class="form-control" id="new-year">
+              </div>
+
+              <button type="submit" class="btn">Add</button>
+            </form>
+
+            <h2>information:</h2>
+            <ul id="places">
+
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+  <div id="show-information">
+    <h2></h2>
+
+    <p>city: <span class="city-name"></span></p>
+    <p>country: <span class="country-name"></span></p>
+    <p>year: <span class="year-name"></span></p>
+  </div>
+</div>
+      </div>
+    </body>
+  </html>
